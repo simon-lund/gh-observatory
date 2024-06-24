@@ -12,7 +12,7 @@ export default function RateLimitInfo() {
         refetchInterval: 1000 * 60,
         throwOnError: true,
         async queryFn() {
-            const url = process.env.NEXT_PUBLIC_BASE_URL + '/api/rate-limit';
+            const url = '/api/rate-limit';
             const res = await fetch(url, {cache: 'no-store'})
             return await res.json()
         },

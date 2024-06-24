@@ -140,7 +140,7 @@ export default function StarredRepositoryList() {
         initialPageParam: 1,
         throwOnError: true,
         async queryFn({pageParam = 1}) {
-            const url = process.env.NEXT_PUBLIC_BASE_URL + '/api/starred?page=' + pageParam;
+            const url = '/api/starred?page=' + pageParam;
             const res = await fetch(url)
             return await res.json()
         },

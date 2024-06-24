@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         description: "A simple webapp to view your starred repositories",
         type: "website",
         locale: "en_US",
-        url: process.env.NEXT_PUBLIC_BASE_URL,
+        url: process.env.BASE_URL,
     },
 };
 
